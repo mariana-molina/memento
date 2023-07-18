@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import shuffle from './utilities/shuffle';
 import Card from './components/Card';
 import Header from './components/Header';
+import useAppBadge from './hooks/useAppBadge';
 
 function App() {
 	const [cards, setCards] = useState(shuffle);
@@ -9,6 +10,7 @@ function App() {
 	const [pickTwo, setPickTwo] = useState(null);
 	const [disable, setDisable] = useState(false);
 	const [wins, setWins] = useState(0);
+	const [setBadge, clearBadge] = useAppBadge();
 
 	const handleClick = card => {
 		if (!disable) {
@@ -26,6 +28,7 @@ function App() {
 		setWins(0);
 		handleTurn();
 		setCards(shuffle);
+		clearBadge();
 	};
 
 	useEffect(() => {
@@ -65,8 +68,9 @@ function App() {
 			setWins(wins + 1);
 			handleTurn();
 			setCards(shuffle);
+			setBadge();
 		}
-	}, [cards, wins]);
+	}, [cards, wins, setBadge]);
 
 	return (
 		<>
