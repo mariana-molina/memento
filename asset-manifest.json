@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "https://mariana-molina.github.io/memento/static/css/main.d8fb1138.css",
+    "main.js": "https://mariana-molina.github.io/memento/static/js/main.e0017a62.js",
+    "static/js/787.f25cc18b.chunk.js": "https://mariana-molina.github.io/memento/static/js/787.f25cc18b.chunk.js",
+    "service-worker.js": "https://mariana-molina.github.io/memento/service-worker.js",
+    "index.html": "https://mariana-molina.github.io/memento/index.html",
+    "main.d8fb1138.css.map": "https://mariana-molina.github.io/memento/static/css/main.d8fb1138.css.map",
+    "main.e0017a62.js.map": "https://mariana-molina.github.io/memento/static/js/main.e0017a62.js.map",
+    "787.f25cc18b.chunk.js.map": "https://mariana-molina.github.io/memento/static/js/787.f25cc18b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8fb1138.css",
+    "static/js/main.e0017a62.js"
+  ]
+}
